@@ -19,11 +19,10 @@ const renderTime = ({ remainingTime }) => {
 };
 
 function App() {
-  const [select, setSelect] = React.useState([10]);
+  const [select, setSelect] = React.useState(10);
   const [timer, setTimer] = React.useState(0);
 
   const SetlectReset = () => {
-    console.log(select);
     let options = [10, 20, 30, 40, 50, 60];
     return (
       <div style={{ display: "flex" }}>
